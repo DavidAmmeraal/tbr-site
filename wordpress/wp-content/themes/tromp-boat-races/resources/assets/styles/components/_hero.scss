@@ -1,0 +1,54 @@
+.hero {
+  position: relative;
+  height: 250px;
+}
+
+.full-size {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero__bg {
+  @extend .full-size;
+
+  object-fit: cover;
+}
+
+.hero__bg-gradient {
+  @extend .full-size;
+
+  background-image: linear-gradient(
+    138deg,
+    rgba(254, 95, 1, 0.85) 3%,
+    rgba(3, 55, 152, 0.81) 100%
+  );
+}
+
+.hero__content_wrapper {
+  @extend .full-size;
+  @extend .d-flex;
+  @extend .align-items-md-center;
+}
+
+.hero__content {
+  @extend .container;
+  @extend .d-flex;
+  @extend .flex-column;
+
+  // md styles
+  @extend .flex-md-row;
+}
+
+.hero__badge {
+  @extend .w-25;
+}
+
+.hero__header {
+  > h1 {
+    @extend .display-3;
+    @extend .text-white;
+  }
+}

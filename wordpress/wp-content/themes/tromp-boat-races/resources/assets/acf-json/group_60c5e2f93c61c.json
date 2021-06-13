@@ -1,0 +1,62 @@
+{
+    "key": "group_60c5e2f93c61c",
+    "title": "Introduction",
+    "fields": [
+        {
+            "key": "field_60c5e2fe8b4eb",
+            "label": "Text",
+            "name": "introduction_text",
+            "type": "wysiwyg",
+            "instructions": "Provide an introduction text for the front page.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_60c5e35e8b4ec",
+            "label": "Slogan",
+            "name": "introduction_slogan",
+            "type": "text",
+            "instructions": "Provide a slogan for the introduction on the front page.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/introduction"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1623581579
+}

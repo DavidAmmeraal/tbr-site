@@ -1,0 +1,8 @@
+.dropdown-toggle::after {
+  border: none !important;
+  // content: "\f107" !important; /* the desired FontAwesome icon */
+  font-family: "Font Awesome 5 Free"; /* stylelint-disable-line */
+  font-weight: 900;
+  content: "";
+  vertical-align: 0; /* to center vertically */
+}

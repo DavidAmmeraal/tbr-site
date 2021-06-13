@@ -1,0 +1,10 @@
+/db/*
+node_modules
+/wordpress/*
+!/wordpress/wp-content
+/wordpress/wp-content/*
+!/wordpress/wp-content/themes
+!/wordpress/wp-content/mu-plugins
+/wordpress/wp-content/themes/*
+!/wordpress/wp-content/themes/tromp-boat-races
+.DS_Store
