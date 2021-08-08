@@ -1,0 +1,16 @@
+.news-item {
+  @extend .bg-light;
+
+  margin-left: -$spacer;
+  padding: $spacer;
+}
+
+.news-item__thumb-wrapper {
+  margin-left: -$spacer;
+  margin-right: -$spacer; 
+}
+.news-item__thumb {
+  max-height: 308px;
+  width: 100%;
+  object-fit: cover;
+}

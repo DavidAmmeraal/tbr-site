@@ -1,6 +1,8 @@
+$heroHeight: 150px;
+
 .hero {
   position: relative;
-  height: 250px;
+  height: $heroHeight;
 }
 
 .full-size {
@@ -43,12 +45,18 @@
 }
 
 .hero__badge {
-  @extend .w-25;
+  > img {
+    max-height: 0.75 * $heroHeight;
+  }
 }
 
 .hero__header {
   > h1 {
-    @extend .display-3;
+    @extend .display-4;
+    @extend .text-white;
+  }
+
+  [role="doc-subtitle"] {
     @extend .text-white;
   }
 }

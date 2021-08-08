@@ -44,9 +44,9 @@
     "location": [
         [
             {
-                "param": "block",
+                "param": "options_page",
                 "operator": "==",
-                "value": "acf\/introduction"
+                "value": "acf-options-introduction"
             }
         ]
     ],
@@ -58,5 +58,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1623581579
+    "modified": 1623665860
 }

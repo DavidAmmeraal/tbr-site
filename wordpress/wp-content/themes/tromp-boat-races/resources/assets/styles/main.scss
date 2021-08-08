@@ -12,6 +12,7 @@
 // @import "~some-node-module";
 
 /** Import theme styles */
+@import "blocks/columns";
 @import "common/global";
 @import "components/buttons";
 @import "components/comments";
@@ -19,6 +20,10 @@
 @import "components/wp-classes";
 @import "components/dropdowns";
 @import "components/hero";
+@import "components/news-item";
+@import "components/notifications";
+@import "components/introduction";
+@import "components/sponsors";
 @import "layouts/header";
 @import "layouts/sidebar";
 @import "layouts/footer";

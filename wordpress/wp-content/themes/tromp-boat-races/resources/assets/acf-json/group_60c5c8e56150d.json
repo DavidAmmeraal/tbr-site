@@ -92,9 +92,9 @@
     "location": [
         [
             {
-                "param": "block",
+                "param": "options_page",
                 "operator": "==",
-                "value": "acf\/hero"
+                "value": "acf-options-hero"
             }
         ]
     ],
@@ -106,5 +106,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1623579974
+    "modified": 1623665047
 }

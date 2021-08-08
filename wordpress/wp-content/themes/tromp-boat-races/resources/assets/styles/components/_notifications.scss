@@ -1,0 +1,32 @@
+.notifications {
+  @extend .bg-light;
+
+  position: relative;
+  margin-right: -$spacer;
+  padding: $spacer;
+}
+
+.notifications__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notifications__icon {
+  @extend .text-danger;
+
+  font-size: 1.75rem;
+}
+
+.notification {
+  @extend .card;
+  @extend .mb-3;
+}
+
+.notification__body {
+  @extend .card-body;
+}
+
+.notification__title {
+  @extend .card-title;
+}

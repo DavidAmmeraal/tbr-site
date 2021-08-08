@@ -1,0 +1,14 @@
+.sponsors {
+  list-style: none;
+  @extend .my-3;
+}
+
+.sponsors__sponsor {
+  img {
+    @extend .w-100;
+    @extend .h-100;
+    @extend .mb-3;
+
+    object-fit: contain;
+  }
+}
