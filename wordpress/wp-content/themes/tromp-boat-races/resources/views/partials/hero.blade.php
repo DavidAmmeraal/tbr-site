@@ -19,7 +19,7 @@
             </div>
             <div class="hero__header">
                 <h1>{{ get_field('hero_title', 'option') }}</h1>
-                <span role="doc-subtitle">{{ get_field('hero_subtitle', 'options') }}</span>
+                <span role="doc-subtitle">{!! get_field('hero_subtitle', 'options') !!}</span>
             </div>
         </div>
     </div>

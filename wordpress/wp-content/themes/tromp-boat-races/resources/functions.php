@@ -161,8 +161,8 @@ fa_custom_setup_cdn_webfont(
 
 add_action('after_setup_theme', 'register_navwalker');
 
-if( function_exists('acf_add_options_page') ) {
-	
+if (function_exists('acf_add_options_page')) {
+
     acf_add_options_page(array(
         'page_title' => 'Theme General Settings',
         'menu_title' => 'Theme Settings',
@@ -171,35 +171,41 @@ if( function_exists('acf_add_options_page') ) {
         'redirect' => false
     ));
 
-	acf_add_options_sub_page(array(
-		'page_title' 	=> 'Hero Settings',
-		'menu_title'	=> 'Hero',
-		'parent_slug'	=> 'theme-general-settings',
-	));
-
     acf_add_options_sub_page(array(
-       'page_title' => 'Introduction settings',  
-       'menu_title' => 'Introduction', 
-       'parent_slug' => 'theme-general-settings', 
+        'page_title'     => 'Hero Settings',
+        'menu_title'    => 'Hero',
+        'parent_slug'    => 'theme-general-settings',
     ));
 
     acf_add_options_sub_page(array(
-       'page_title' => 'Sponsors settings',  
-       'menu_title' => 'Sponsors', 
-       'parent_slug' => 'theme-general-settings', 
+        'page_title' => 'Introduction settings',
+        'menu_title' => 'Introduction',
+        'parent_slug' => 'theme-general-settings',
     ));
 
     acf_add_options_sub_page(array(
-       'page_title' => 'News settings',  
-       'menu_title' => 'News', 
-       'parent_slug' => 'theme-general-settings', 
+        'page_title' => 'Sponsors settings',
+        'menu_title' => 'Sponsors',
+        'parent_slug' => 'theme-general-settings',
     ));
 
     acf_add_options_sub_page(array(
-        'page_title' => 'Notifications settings',  
-        'menu_title' => 'Notifications', 
-        'parent_slug' => 'theme-general-settings', 
-     ));
+        'page_title' => 'News settings',
+        'menu_title' => 'News',
+        'parent_slug' => 'theme-general-settings',
+    ));
+
+    acf_add_options_sub_page(array(
+        'page_title' => 'Notifications settings',
+        'menu_title' => 'Notifications',
+        'parent_slug' => 'theme-general-settings',
+    ));
+
+    acf_add_options_sub_page(array(
+        'page_title' => 'Footer settings',
+        'menu_title' => 'Footer',
+        'parent_slug' => 'theme-general-settings',
+    ));
 }
 
 /**
@@ -208,18 +214,20 @@ if( function_exists('acf_add_options_page') ) {
  * @param string $more "Read more" excerpt string.
  * @return string (Maybe) modified "read more" excerpt string.
  */
-function wpdocs_excerpt_more( $more ) {
-    if ( ! is_single() ) {
-        $more = sprintf( '... <a class="read-more" href="%1$s">%2$s</a>',
-            get_permalink( get_the_ID() ),
-            __( 'lees verder', 'textdomain' )
+function wpdocs_excerpt_more($more)
+{
+    if (!is_single()) {
+        $more = sprintf(
+            '... <a class="read-more" href="%1$s">%2$s</a>',
+            get_permalink(get_the_ID()),
+            __('lees verder', 'textdomain')
         );
     }
- 
+
     return $more;
 }
-add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+add_filter('excerpt_more', 'wpdocs_excerpt_more');
 
-if(function_exists('set_post_thumbnail_size')) {
+if (function_exists('set_post_thumbnail_size')) {
     set_post_thumbnail_size(720);
 }
